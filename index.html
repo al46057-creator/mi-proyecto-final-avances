@@ -1,165 +1,526 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finanzas Smart</title>
+    <title>Finanzas Romero | Control Financiero</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f8f5;
-            color: #24352d;
-        }
-
-        header {
-            background-color: #12372a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #205c43;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 12px;
-            font-weight: bold;
-        }
-
-        .principal {
-            text-align: center;
-            padding: 65px 20px;
-            background-color: #dcefe3;
-        }
-
-        .principal h2 {
-            font-size: 34px;
-            color: #174c35;
-        }
-
-        .principal p {
-            font-size: 18px;
-        }
-
-        .contenido {
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .tarjetas {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .tarjeta {
-            background-color: white;
-            padding: 22px;
-            width: 280px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px #00000015;
-        }
-
-        .tarjeta h3 {
-            color: #218052;
-        }
-
-        footer {
-            background-color: #12372a;
-            color: white;
-            text-align: center;
-            padding: 18px;
-            margin-top: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Finanzas Smart</h1>
-        <p>Aprende a cuidar tu dinero y construir tu futuro</p>
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">FR</span>
+                <span>Finanzas <strong>Romero</strong></span>
+            </a>
+
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#resumen">Mi resumen</a>
+                <a href="#presupuesto">Presupuesto</a>
+                <a href="#movimientos">Movimientos</a>
+                <a href="#consejos">Consejos</a>
+            </nav>
+
+            <a href="#resumen" class="nav-button">Mi panel</a>
+
+        </div>
     </header>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#consejos">Consejos</a>
-        <a href="#publico">¿Para quién?</a>
-    </nav>
 
-    <section class="principal" id="inicio">
-        <h2>Pequeños ahorros, grandes metas</h2>
-        <p>
-            Descubre cómo ahorrar, organizar tus gastos
-            y tomar mejores decisiones financieras.
-        </p>
-    </section>
+    <!-- INICIO -->
+    <main>
 
-    <section class="contenido" id="consejos">
-        <h2>Consejos financieros</h2>
+        <section class="hero" id="inicio">
+            <div class="container hero-container">
 
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <h3>Aprende a ahorrar</h3>
+                <div class="hero-content">
+                    <span class="section-tag">TU FUTURO FINANCIERO COMIENZA HOY</span>
+
+                    <h1>
+                        Organiza tu dinero.
+                        <span>Construye tu futuro.</span>
+                    </h1>
+
+                    <p>
+                        Toma el control de tus finanzas, organiza tus ingresos,
+                        administra tus gastos y trabaja cada día para alcanzar
+                        tus objetivos económicos.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#resumen" class="btn-primary">Ver mi resumen</a>
+                        <a href="#presupuesto" class="btn-secondary">Explorar presupuesto</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <h3>100%</h3>
+                            <p>Control financiero</p>
+                        </div>
+
+                        <div>
+                            <h3>24/7</h3>
+                            <p>Organización</p>
+                        </div>
+
+                        <div>
+                            <h3>+ Metas</h3>
+                            <p>Mejor administración</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85"
+                        alt="Análisis financiero en computadora">
+
+                    <div class="floating-card">
+                        <span class="floating-label">Balance disponible</span>
+                        <h3>$25,000.00</h3>
+                        <span class="positive">+12.5% este mes</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RESUMEN FINANCIERO -->
+        <section class="summary-section" id="resumen">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">TU INFORMACIÓN</span>
+                        <h2>Resumen financiero</h2>
+                        <p>Una vista general de tu situación económica.</p>
+                    </div>
+
+                    <span class="date-label">Resumen mensual</span>
+                </div>
+
+                <div class="summary-grid">
+
+                    <article class="summary-card balance-card">
+                        <div class="card-top">
+                            <span>Balance total</span>
+                            <span class="card-icon">$</span>
+                        </div>
+                        <h3>$25,000.00</h3>
+                        <p class="positive">Disponible en tu cuenta</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <div class="card-top">
+                            <span>Ingresos</span>
+                            <span class="card-icon">↗</span>
+                        </div>
+                        <h3>$18,500.00</h3>
+                        <p class="positive">Dinero recibido</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <div class="card-top">
+                            <span>Gastos</span>
+                            <span class="card-icon">↘</span>
+                        </div>
+                        <h3>$8,500.00</h3>
+                        <p class="negative">Dinero utilizado</p>
+                    </article>
+
+                    <article class="summary-card">
+                        <div class="card-top">
+                            <span>Ahorro</span>
+                            <span class="card-icon">◇</span>
+                        </div>
+                        <h3>$5,000.00</h3>
+                        <p class="positive">Ahorro acumulado</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ACTIVIDAD FINANCIERA -->
+        <section class="activity-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">ANÁLISIS</span>
+                        <h2>Actividad financiera</h2>
+                        <p>Visualiza el comportamiento de tus finanzas.</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+
+                    <div class="activity-header">
+                        <div>
+                            <h3>Ingresos y gastos</h3>
+                            <p>Comportamiento de los últimos seis meses</p>
+                        </div>
+
+                        <div class="chart-legend">
+                            <span><i class="legend-income"></i> Ingresos</span>
+                            <span><i class="legend-expense"></i> Gastos</span>
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-y-axis">
+                            <span>$20 mil</span>
+                            <span>$15 mil</span>
+                            <span>$10 mil</span>
+                            <span>$5 mil</span>
+                            <span>$0</span>
+                        </div>
+
+                        <div class="chart-content">
+
+                            <div class="chart-grid-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="chart-bars">
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 65%;"></div>
+                                    <div class="bar expense-bar" style="height: 35%;"></div>
+                                    <span>Ene</span>
+                                </div>
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 80%;"></div>
+                                    <div class="bar expense-bar" style="height: 45%;"></div>
+                                    <span>Feb</span>
+                                </div>
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 60%;"></div>
+                                    <div class="bar expense-bar" style="height: 40%;"></div>
+                                    <span>Mar</span>
+                                </div>
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 90%;"></div>
+                                    <div class="bar expense-bar" style="height: 55%;"></div>
+                                    <span>Abr</span>
+                                </div>
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 75%;"></div>
+                                    <div class="bar expense-bar" style="height: 48%;"></div>
+                                    <span>May</span>
+                                </div>
+
+                                <div class="chart-group">
+                                    <div class="bar income-bar" style="height: 95%;"></div>
+                                    <div class="bar expense-bar" style="height: 50%;"></div>
+                                    <span>Jun</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- OBJETIVO DE AHORRO -->
+        <section class="savings-section">
+            <div class="container savings-container">
+
+                <div class="savings-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1000&q=85"
+                        alt="Ahorro y planificación financiera">
+                </div>
+
+                <div class="savings-content">
+                    <span class="section-tag">META PERSONAL</span>
+
+                    <h2>Construye tus metas a través del ahorro</h2>
+
+                    <p>
+                        Ahorrar es una de las mejores decisiones para alcanzar
+                        tus objetivos. Organiza tu dinero y avanza poco a poco
+                        hacia aquello que deseas conseguir.
+                    </p>
+
+                    <div class="goal-info">
+                        <span>Meta de ahorro</span>
+                        <strong>$10,000.00</strong>
+                    </div>
+
+                    <div class="goal-info">
+                        <span>Ahorro actual</span>
+                        <strong>$5,000.00</strong>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%;"></div>
+                    </div>
+
+                    <div class="progress-text">
+                        <span>50% completado</span>
+                        <span>Faltan $5,000.00</span>
+                    </div>
+
+                    <a href="#presupuesto" class="btn-primary">Revisar presupuesto</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRESUPUESTO -->
+        <section class="budget-section" id="presupuesto">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">ORGANIZA TU DINERO</span>
+                        <h2>Distribución del presupuesto</h2>
+                        <p>Conoce cómo se distribuyen tus recursos.</p>
+                    </div>
+                </div>
+
+                <div class="budget-grid">
+
+                    <article class="budget-card">
+                        <div class="budget-icon">⌂</div>
+                        <h3>Vivienda</h3>
+                        <p>Gastos relacionados con el hogar.</p>
+                        <div class="budget-amount">$3,000.00</div>
+                        <div class="budget-progress">
+                            <div style="width: 70%;"></div>
+                        </div>
+                        <span>70% del presupuesto asignado</span>
+                    </article>
+
+                    <article class="budget-card">
+                        <div class="budget-icon">◇</div>
+                        <h3>Alimentación</h3>
+                        <p>Compras de comida y productos básicos.</p>
+                        <div class="budget-amount">$2,000.00</div>
+                        <div class="budget-progress">
+                            <div style="width: 55%;"></div>
+                        </div>
+                        <span>55% del presupuesto asignado</span>
+                    </article>
+
+                    <article class="budget-card">
+                        <div class="budget-icon">↗</div>
+                        <h3>Transporte</h3>
+                        <p>Traslados y movilidad diaria.</p>
+                        <div class="budget-amount">$1,000.00</div>
+                        <div class="budget-progress">
+                            <div style="width: 40%;"></div>
+                        </div>
+                        <span>40% del presupuesto asignado</span>
+                    </article>
+
+                    <article class="budget-card">
+                        <div class="budget-icon">☆</div>
+                        <h3>Ahorro</h3>
+                        <p>Dinero destinado a tus objetivos.</p>
+                        <div class="budget-amount">$2,500.00</div>
+                        <div class="budget-progress">
+                            <div style="width: 85%;"></div>
+                        </div>
+                        <span>85% del presupuesto asignado</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONSEJOS -->
+        <section class="advice-section" id="consejos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">EDUCACIÓN FINANCIERA</span>
+                        <h2>Consejos para mejorar tus finanzas</h2>
+                        <p>Pequeños hábitos que pueden ayudarte a administrar mejor tu dinero.</p>
+                    </div>
+                </div>
+
+                <div class="advice-container">
+
+                    <div class="advice-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=85"
+                            alt="Persona organizando sus finanzas">
+                    </div>
+
+                    <div class="advice-list">
+
+                        <article class="advice-item">
+                            <span class="advice-number">01</span>
+                            <div>
+                                <h3>Registra tus gastos</h3>
+                                <p>Anota tus compras y pagos para conocer en qué utilizas tu dinero.</p>
+                            </div>
+                        </article>
+
+                        <article class="advice-item">
+                            <span class="advice-number">02</span>
+                            <div>
+                                <h3>Establece un presupuesto</h3>
+                                <p>Distribuye tus ingresos entre necesidades, gastos y ahorro.</p>
+                            </div>
+                        </article>
+
+                        <article class="advice-item">
+                            <span class="advice-number">03</span>
+                            <div>
+                                <h3>Evita gastos innecesarios</h3>
+                                <p>Antes de comprar, analiza si realmente necesitas ese producto.</p>
+                            </div>
+                        </article>
+
+                        <article class="advice-item">
+                            <span class="advice-number">04</span>
+                            <div>
+                                <h3>Define objetivos de ahorro</h3>
+                                <p>Establece metas y trabaja constantemente para alcanzarlas.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MOVIMIENTOS -->
+        <section class="movements-section" id="movimientos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">REGISTRO FINANCIERO</span>
+                        <h2>Últimos movimientos</h2>
+                        <p>Consulta los movimientos de ejemplo de tu cuenta.</p>
+                    </div>
+                </div>
+
+                <div class="movements-card">
+
+                    <div class="movement-row">
+                        <div class="movement-info">
+                            <div class="movement-icon income-icon">↙</div>
+                            <div>
+                                <h3>Ingreso de dinero</h3>
+                                <p>Ingreso mensual</p>
+                            </div>
+                        </div>
+                        <span class="movement-date">01 Jun 2026</span>
+                        <strong class="movement-income">+$5,000.00</strong>
+                    </div>
+
+                    <div class="movement-row">
+                        <div class="movement-info">
+                            <div class="movement-icon expense-icon">↗</div>
+                            <div>
+                                <h3>Compra de alimentos</h3>
+                                <p>Alimentación</p>
+                            </div>
+                        </div>
+                        <span class="movement-date">03 Jun 2026</span>
+                        <strong class="movement-expense">-$850.00</strong>
+                    </div>
+
+                    <div class="movement-row">
+                        <div class="movement-info">
+                            <div class="movement-icon expense-icon">↗</div>
+                            <div>
+                                <h3>Pago de servicios</h3>
+                                <p>Servicios del hogar</p>
+                            </div>
+                        </div>
+                        <span class="movement-date">05 Jun 2026</span>
+                        <strong class="movement-expense">-$1,000.00</strong>
+                    </div>
+
+                    <div class="movement-row">
+                        <div class="movement-info">
+                            <div class="movement-icon income-icon">↙</div>
+                            <div>
+                                <h3>Ingreso adicional</h3>
+                                <p>Otros ingresos</p>
+                            </div>
+                        </div>
+                        <span class="movement-date">08 Jun 2026</span>
+                        <strong class="movement-income">+$2,500.00</strong>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-icon">FR</span>
+                    <span>Finanzas <strong>Romero</strong></span>
+                </a>
+
                 <p>
-                    Separa una parte de tus ingresos
-                    y establece metas de ahorro.
+                    Una mejor administración de tu dinero comienza
+                    con buenas decisiones financieras.
                 </p>
             </div>
 
-            <div class="tarjeta">
-                <h3>Organiza tu presupuesto</h3>
-                <p>
-                    Registra tus ingresos y gastos
-                    para saber en qué utilizas tu dinero.
-                </p>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#resumen">Mi resumen</a>
+                <a href="#presupuesto">Presupuesto</a>
+                <a href="#movimientos">Movimientos</a>
             </div>
 
-            <div class="tarjeta">
-                <h3>Evita gastos innecesarios</h3>
-                <p>
-                    Compara precios y piensa antes
-                    de realizar una compra.
-                </p>
+            <div class="footer-links">
+                <h3>Información</h3>
+                <a href="#consejos">Consejos financieros</a>
+                <a href="#resumen">Control financiero</a>
+                <a href="#presupuesto">Ahorro</a>
             </div>
+
         </div>
-    </section>
 
-    <section class="contenido" id="publico">
-        <h2>Finanzas para todos</h2>
-
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <h3>Estudiantes</h3>
-                <p>Administra tu dinero y ahorra mientras estudias.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>Universitarios</h3>
-                <p>Organiza tus gastos escolares y personales.</p>
-            </div>
-
-            <div class="tarjeta">
-                <h3>Emprendedores</h3>
-                <p>Aprende a controlar gastos y planear tus metas.</p>
-            </div>
+        <div class="footer-bottom">
+            <p>© 2026 Finanzas Romero. Todos los derechos reservados.</p>
         </div>
-    </section>
-
-    <footer>
-        <p>Finanzas Smart | Aprende hoy, mejora tu futuro</p>
     </footer>
 
 </body>
